@@ -87,6 +87,7 @@ static void MX_TIM3_Init(void);
   */
 int main(void)
 {
+	uint16_t pwm_value,step;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -111,6 +112,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
 
   /* USER CODE END 2 */
 
@@ -121,6 +123,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  HAL_Delay(100);
+	  if(pwm_value == 0) step = 100;
+	  if(pwm_value == 2000) step = -100;
+	  pwm_value += step;
+	  user_pwm_setvalue(pwm_value);
   }
   /* USER CODE END 3 */
 }
@@ -205,6 +212,25 @@ static void MX_TIM3_Init(void)
   /* USER CODE END TIM3_Init 2 */
   HAL_TIM_MspPostInit(&htim3);
 
+}
+
+/**
+  * @brief set the value of the parameterPulse
+  * you can modify the pulse width settings
+  * ere, we add a user PWM setting function in main.c file, of which the parameter should be modified.
+  * @param None
+  * @retval None
+  */
+void user_pwm_setvalue(uint16_t value)
+{
+    TIM_OC_InitTypeDef sConfigOC;
+
+    sConfigOC.OCMode = TIM_OCMODE_PWM1;
+    sConfigOC.Pulse = value;
+    sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+    sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+    HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4);
+    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
 }
 
 /**
