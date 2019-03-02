@@ -87,7 +87,8 @@ static void MX_TIM3_Init(void);
   */
 int main(void)
 {
-	uint16_t pwm_value,step;
+	uint16_t pwm_value = 0;
+	uint16_t step = 100;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
