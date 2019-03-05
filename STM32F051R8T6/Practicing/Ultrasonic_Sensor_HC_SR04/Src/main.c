@@ -118,7 +118,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  ultras(&temp);
-	//  sprintf("HTV show value temp =%f",temp);
+	printf("HTV show value temp =%f",temp);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
