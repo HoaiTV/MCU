@@ -118,6 +118,18 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  ultras(&temp);
+	  if(temp <10)
+		  {
+				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,0);
+				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,1);
+		  }
+	  else
+	  {
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,1);
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,0);
+	  }
+
+
 	printf("HTV show value temp =%f",temp);
     /* USER CODE BEGIN 3 */
   }
