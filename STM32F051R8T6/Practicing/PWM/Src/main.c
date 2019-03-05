@@ -88,7 +88,7 @@ static void MX_TIM3_Init(void);
 int main(void)
 {
 	uint16_t pwm_value = 2000;
-	uint16_t step = 100;
+	uint16_t step = -100;
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -129,6 +129,7 @@ int main(void)
 	  if(pwm_value == 2000) step = -100;
 	  pwm_value += step;
 	  user_pwm_setvalue(pwm_value);
+	  printf("HTV Call when finish cycle");
   }
   /* USER CODE END 3 */
 }

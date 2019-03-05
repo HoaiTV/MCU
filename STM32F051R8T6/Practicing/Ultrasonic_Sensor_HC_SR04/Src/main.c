@@ -120,14 +120,16 @@ int main(void)
 	  ultras(&temp);
 	  if(temp <10)
 		  {
-				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,0);
-				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,1);
+				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,1);
+				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,0);
+
 		  }
 	  else
 	  {
-			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,1);
-			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,0);
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,0);
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,1);
 	  }
+
 
 
 	printf("HTV show value temp =%f",temp);
@@ -212,6 +214,7 @@ static void MX_GPIO_Init(void)
  * para : *p, pointer to save value of distance
  *
  * */
+uint32_t k =0;
 void ultras(float *p)
 {
 	uint8_t i;
@@ -233,6 +236,18 @@ void ultras(float *p)
 		 HAL_Delay(60);
 	}
 	 *p=Ultr_Temp/5/1000000;
+	 for(i =0; i <5; i++)
+	 {
+		 *p +=5 ;
+
+	 }
+	 k ++;
+	 if(k == 10)
+	 {
+		 *p = 0;
+		  k = 0;
+
+	 }
 }
 
 
