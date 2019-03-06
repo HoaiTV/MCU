@@ -43,7 +43,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+//The value to save distance of sensor's measure.
 	float temp;
+//End add.
 
 /* USER CODE END Includes */
 
@@ -94,7 +96,6 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
@@ -118,26 +119,16 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  ultras(&temp);
-	  if(temp <10)
-		  {
-				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,1);
-				HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,0);
-
-		  }
-	  else
-	  {
-			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,0);
-			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,1);
-	  }
-
-
-
-	printf("HTV show value temp =%f",temp);
+	  printf("HTV show value temp =%f",temp);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
 
+static inline void delay_us(unsigned us)
+{
+	SysTick_Config(us *(SystemCoreClock/8) / 100000);
+}
 /**
   * @brief System Clock Configuration
   * @retval None
@@ -219,16 +210,18 @@ void ultras(float *p)
 {
 	uint8_t i;
 	uint8_t j;
-	float Ultr_Temp;
+	float Ultr_Temp = 0;
 	for(i = 0; i<5; i++)
 	{
+		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,0);
+		HAL_delay(2);
 		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,1);
-		if(SysTick_Config((SystemCoreClock/1000) / 100))
+		delay_us(10);
 		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_12,0);
 		while(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_13) == 0 );
 		while(HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_13) == 1 )
 		{
-			if(SysTick_Config((SystemCoreClock/1000) / 125))
+			delay_us(8);
 			j++;
 		}
 		 Ultr_Temp+=340/2*j*10;// max = 3m, haha, somtimes can reach 5-6m which is funny

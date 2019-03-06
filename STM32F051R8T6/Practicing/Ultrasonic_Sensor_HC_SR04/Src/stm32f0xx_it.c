@@ -142,7 +142,19 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
+//Hoaitv add to handle when have interupt.
+  HAL_SYSTICK_IRQHandler();
+  if(temp <10)
+	  {
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,1);
+			HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,0);
 
+	  }
+  else
+  {
+		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_8,0);
+		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,1);
+  }
   /* USER CODE END SysTick_IRQn 1 */
 }
 

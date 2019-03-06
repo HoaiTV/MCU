@@ -52,6 +52,9 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+//The value to save distance of sensor's measure.
+	float temp;
+//End add.
 
 /* USER CODE END Includes */
 
@@ -74,6 +77,9 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
+
+void ultras(float *p);
+
 
 /* USER CODE END EFP */
 
