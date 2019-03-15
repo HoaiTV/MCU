@@ -72,6 +72,10 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+void HTV_STM_LOG_0(char buffer[200],uint32_t parameter);
+void HTV_STM_LOG_1(char buffer[200],uint32_t parameter);
+void HTV_STM_LOG_2(char buffer[200],uint32_t parameter_1,uint32_t parameter_2);
+
 
 /* USER CODE BEGIN EFP */
 

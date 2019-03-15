@@ -78,20 +78,27 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-#ifdef __GNUC__
-  /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
-     set to 'Yes') calls __io_putchar() */
-  #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
-#else
-  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
-#endif /* __GNUC__ */
-PUTCHAR_PROTOTYPE
+void HTV_STM_LOG_0(char buffer[200],uint32_t parameter)
 {
-  /* Place your implementation of fputc here */
-  /* e.g. write a character to the EVAL_COM1 and Loop until the end of transmission */
-  HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xFFFF);
+	char temp[200];
+	uint32_t len;
+	len = sprintf(temp,buffer);
+	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
+}
+void HTV_STM_LOG_2(char buffer[200],uint32_t parameter_1,uint32_t parameter_2)
+{
+	char temp[200];
+	uint32_t len;
+	len = sprintf(temp,buffer,parameter_1,parameter_2);
+	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
 
-  return ch;
+}
+void HTV_STM_LOG_1(char buffer[200],uint32_t parameter)
+{
+	char temp[200];
+	uint32_t len;
+	len = sprintf(temp,buffer,parameter);
+	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
 }
 
 /* USER CODE END 0 */
