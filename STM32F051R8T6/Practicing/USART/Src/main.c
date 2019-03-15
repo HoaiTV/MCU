@@ -40,6 +40,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "log.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -62,7 +64,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-UART_HandleTypeDef huart2;
+
 
 /* USER CODE BEGIN PV */
 
@@ -78,11 +80,18 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void HTV_STM_LOG_0(char buffer[200],uint32_t parameter)
+void HTV_STM_LOG_0(char buffer[200])
 {
 	char temp[200];
 	uint32_t len;
 	len = sprintf(temp,buffer);
+	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
+}
+void HTV_STM_LOG_1(char buffer[200],uint32_t parameter)
+{
+	char temp[200];
+	uint32_t len;
+	len = sprintf(temp,buffer,parameter);
 	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
 }
 void HTV_STM_LOG_2(char buffer[200],uint32_t parameter_1,uint32_t parameter_2)
@@ -92,13 +101,6 @@ void HTV_STM_LOG_2(char buffer[200],uint32_t parameter_1,uint32_t parameter_2)
 	len = sprintf(temp,buffer,parameter_1,parameter_2);
 	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
 
-}
-void HTV_STM_LOG_1(char buffer[200],uint32_t parameter)
-{
-	char temp[200];
-	uint32_t len;
-	len = sprintf(temp,buffer,parameter);
-	HAL_UART_Transmit(&huart2, (uint8_t*)temp, len, 500);
 }
 
 /* USER CODE END 0 */
@@ -147,6 +149,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  HTV_STM_LOG_0("Hello World I AM HOAITV");
       printf("\n\r welcome to www.waveshere.com !!!\n\r");
       HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
