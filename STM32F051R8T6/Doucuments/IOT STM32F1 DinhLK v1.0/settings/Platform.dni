@@ -1,0 +1,82 @@
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+Stripe=1 0 1000 2 1 0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[TraceHelper]
+Enabled=0
+ShowSource=1
+[DebugChecksum]
+Checksum=1181597139
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[Profiling]
+Enabled=0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Breakpoints2]
+Count=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\Service\TdsSensor\TdsSensor.c}.130.1@1" 0 0 0 0 "" 0 ""
+Count=1
+[Aliases]
+A0=_ "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\MobusSlave\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" ""
+A1=_ "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\MobusSlave\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c" ""
+A2=_ "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\MobusSlave\Libraries\Startup\startup_stm32f10x_md.s" ""
+A3=_ "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\MobusSlave\Service\DS18B20\ds18b20.c" "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\ModbusSlave\1.1.0.1\Service\DS18B20\ds18b20.c"
+A4=_ "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\MobusSlave\Service\Timer\timer.c" "C:\Users\DONGNX\Google Drive\Cong viec\My HG\Firmware\branch\stm32f1\ModbusSlave\1.1.0.1\Service\Timer\timer.c"
+A5=_ "C:\Users\DongNX\Google Drive\Cong viec\ModbusC\MobusSlave\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c" ""
+A6=_ "C:\Users\DongNX\Google Drive\Cong viec\ModbusC\STM32F1Platform\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c" ""
+A7=_ "C:\Users\SmartHomeTech\Desktop\HG-STM32F1-ChienNQ-V1.1\Libraries\Startup\startup_stm32f10x_md.s" ""
+A8=_ "D:\Hoc tap\Taskforce\STM8S\Project\STM32F1Platform\Application\Main\main.c" ""
+A9=_ "D:\du an\HG Board\Frimware\HG-STM32F1-ChienNQ-V1.1\Application\Main\main.c" ""
+Count=10
+SuppressDialog=1

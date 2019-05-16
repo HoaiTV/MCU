@@ -1,0 +1,7 @@
+Project: EWARM
+Converter: IARProjectParser
+Date: 20190326
+
+Project needs GCC compatible startup code and linker script
+Test_Clock: FPU set to default FPU for device: None.
+Test_Clock: FPU set to default FPU for device: None.

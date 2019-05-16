@@ -1,0 +1,11 @@
+Project: TIM-Infrared_EWARM
+Converter: IARProjectParser
+Date: 20190503
+
+Project needs GCC compatible startup code and linker script
+STM32373C_EVAL: ATTENTION: Failed to determine FPU core for the device: DeviceInfo [vendorName=STMicroelectronics, mcuName=STM32F373xC], MCU information uncertain.
+STM32373C_EVAL: ATTENTION: Failed to determine FPU core for the device: DeviceInfo [vendorName=STMicroelectronics, mcuName=STM32F373xC], MCU information uncertain.
+STM32303C_EVAL: ATTENTION: Failed to determine FPU core for the device: DeviceInfo [vendorName=STMicroelectronics, mcuName=STM32F373xC], MCU information uncertain.
+STM32303C_EVAL: ATTENTION: Failed to determine FPU core for the device: DeviceInfo [vendorName=STMicroelectronics, mcuName=STM32F373xC], MCU information uncertain.
+STM32072B_EVAL: FPU set to none.
+STM32072B_EVAL: FPU set to default FPU for device: None.

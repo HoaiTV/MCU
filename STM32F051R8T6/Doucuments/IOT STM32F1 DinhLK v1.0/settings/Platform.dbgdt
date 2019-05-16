@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1221</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>915</ColumnWidth1>
+        <ColumnWidth2>244</ColumnWidth2>
+        <ColumnWidth3>61</ColumnWidth3>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>196</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        
+        
+        
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly>
+      <Memory>
+        <PreferedWindows>
+          
+          
+          
+          
+        <Position>4</Position><ScreenPosX>1416</ScreenPosX><ScreenPosY>71</ScreenPosY><Windows/></PreferedWindows>
+        <FindDirection>1</FindDirection>
+        <FindAsHex>0</FindAsHex>
+      </Memory>
+      <Find-in-Files>
+        
+        
+        
+      <ColumnWidth0>440</ColumnWidth0><ColumnWidth1>62</ColumnWidth1><ColumnWidth2>754</ColumnWidth2></Find-in-Files>
+      <Watch>
+        <Format>
+          <struct_types/>
+          <watch_formats><Fmt><Key>{W}Watch-0:g_Offset</Key><Value>3</Value></Fmt><Fmt><Key>{W}Watch-0:nIndex</Key><Value>3</Value></Fmt><Fmt><Key>{W}Watch-1:Channel1</Key><Value>3</Value></Fmt><Fmt><Key>{W}Watch-1:nData</Key><Value>4</Value></Fmt></watch_formats>
+        </Format>
+        
+        
+        
+        
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>StaticWatch</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows><Column0>161</Column0><Column1>148</Column1><Column2>100</Column2><Column3>100</Column3></Watch>
+      <StaticWatch>
+        
+        
+        
+        
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Watch</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></StaticWatch>
+      <Register>
+        <PreferedWindows>
+          
+          
+          
+          
+        <Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows>
+      </Register>
+    <QuickWatch><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Watch</Factory></Window><Window><Factory>StaticWatch</Factory></Window></Windows></PreferedWindows><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></QuickWatch></Static>
+    <Windows>
+      
+      
+      
+      
+    <Wnd4>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-17481-20939</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-16958-20949</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-7717-30742</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd5>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28229-20942</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>Platform</ExpandedNode><ExpandedNode>Platform/application</ExpandedNode><ExpandedNode>Platform/hardware</ExpandedNode><ExpandedNode>Platform/hardware/adc</ExpandedNode><ExpandedNode>Platform/hardware/flash</ExpandedNode><ExpandedNode>Platform/hardware/pwm</ExpandedNode><ExpandedNode>Platform/hardware/uart</ExpandedNode><ExpandedNode>Platform/services</ExpandedNode><ExpandedNode>Platform/services/JSN-SR04T</ExpandedNode><ExpandedNode>Platform/services/LCD_1602</ExpandedNode><ExpandedNode>Platform/services/TdsSensor</ExpandedNode><ExpandedNode>Platform/services/device</ExpandedNode><ExpandedNode>Platform/services/dimmer</ExpandedNode><ExpandedNode>Platform/services/ds18b20</ExpandedNode><ExpandedNode>Platform/services/modbus</ExpandedNode><ExpandedNode>Platform/services/modbus/port</ExpandedNode><ExpandedNode>Platform/services/relay</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd5><Wnd6><Tabs><Tab><Identity>TabID-4220-13080</Identity><TabName>Watch</TabName><Factory>Watch</Factory><Session><Expressions><Expression><Expression>flag_tds_ch</Expression></Expression><Expression><Expression>test_interrupt</Expression></Expression><Expression><Expression>g_arPPM</Expression></Expression><Expression><Expression>g_arVdropRc</Expression></Expression><Expression><Expression>g_arVdropCH</Expression></Expression><Expression><Expression>g_arVdropCHN</Expression></Expression><Expression><Expression>nVdrop</Expression></Expression><Expression><Expression>g_arADC</Expression></Expression><Expression><Expression>g_pReceivePackage</Expression></Expression><Expression><Expression>g_pReceivePackage</Expression></Expression><Expression><Expression>g_Distant</Expression></Expression><Expression><Expression>g_arADC_2</Expression></Expression><Expression><Expression>g_arADC_0</Expression></Expression><Expression><Expression>g_arADC_1</Expression></Expression></Expressions><TabId>1</TabId><Column0>161</Column0><Column1>148</Column1><Column2>100</Column2><Column3>100</Column3></Session></Tab><Tab><Identity>TabID-29855-13880</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory><Session><Expressions><Expression><Expression>Testcont</Expression></Expression><Expression><Expression>Testcont1</Expression></Expression></Expressions><TabId>2</TabId><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd6><Wnd7><Tabs><Tab><Identity>TabID-501-2636</Identity><TabName>Disassembly</TabName><Factory>Disassembly</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd7></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c</Filename><XPos>0</XPos><YPos>1099</YPos><SelStart>37006</SelStart><SelEnd>37006</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c</Filename><XPos>0</XPos><YPos>123</YPos><SelStart>3640</SelStart><SelEnd>3640</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h</Filename><XPos>0</XPos><YPos>482</YPos><SelStart>20174</SelStart><SelEnd>20174</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\DHT21\dht21.c</Filename><XPos>0</XPos><YPos>33</YPos><SelStart>950</SelStart><SelEnd>950</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\System\system.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h</Filename><XPos>0</XPos><YPos>1097</YPos><SelStart>48769</SelStart><SelEnd>48783</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c</Filename><XPos>0</XPos><YPos>97</YPos><SelStart>2772</SelStart><SelEnd>2772</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c</Filename><XPos>0</XPos><YPos>925</YPos><SelStart>33014</SelStart><SelEnd>33014</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\Systemconfig\stm32f10x.h</Filename><XPos>0</XPos><YPos>204</YPos><SelStart>13354</SelStart><SelEnd>13366</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\TdsSensor\TdsSensor.h</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>1572</SelStart><SelEnd>1572</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\PI\pi.h</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>150</SelStart><SelEnd>150</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\HardWareTimer\hw_timer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>128</SelStart><SelEnd>141</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\TdsSensor\TdsSensor.c</Filename><XPos>0</XPos><YPos>141</YPos><SelStart>4194</SelStart><SelEnd>4194</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Application\Main\Params.h</Filename><XPos>0</XPos><YPos>27</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Buzz\buzz.h</Filename><XPos>0</XPos><YPos>3</YPos><SelStart>392</SelStart><SelEnd>392</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Buzz\buzz.c</Filename><XPos>0</XPos><YPos>39</YPos><SelStart>786</SelStart><SelEnd>786</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\PI\pi.c</Filename><XPos>0</XPos><YPos>39</YPos><SelStart>1587</SelStart><SelEnd>1587</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h</Filename><XPos>0</XPos><YPos>130</YPos><SelStart>5627</SelStart><SelEnd>5627</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\IO\io.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>463</SelStart><SelEnd>469</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h</Filename><XPos>0</XPos><YPos>193</YPos><SelStart>14811</SelStart><SelEnd>14828</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\IOT STM32F1 DinhLK v1.0\Application\Main\main.c</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>335</SelStart><SelEnd>335</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\IOT STM32F1 DinhLK v1.0\Service\Timer\timer.c</Filename><XPos>0</XPos><YPos>59</YPos><SelStart>577</SelStart><SelEnd>577</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\ADC\adc.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>119</SelStart><SelEnd>119</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Timer\timer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Parameters\parameter.h</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>687</SelStart><SelEnd>687</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Parameters\parameter.c</Filename><XPos>0</XPos><YPos>63</YPos><SelStart>818</SelStart><SelEnd>818</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Device\device.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>230</SelStart><SelEnd>230</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\Flash\flash.c</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\Flash\flash.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\HardWareTimer\hw_timer.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>150</SelStart><SelEnd>150</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Device\device.c</Filename><XPos>0</XPos><YPos>313</YPos><SelStart>9364</SelStart><SelEnd>9364</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\BlinkLed\blinkled.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>574</SelStart><SelEnd>587</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\BlinkLed\blinkled.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>37</SelStart><SelEnd>37</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\DS18B20\ds18b20.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>788</SelStart><SelEnd>800</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\Uart\uart.h</Filename><XPos>0</XPos><YPos>7</YPos><SelStart>1036</SelStart><SelEnd>1036</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\ADC\adc.c</Filename><XPos>0</XPos><YPos>57</YPos><SelStart>2873</SelStart><SelEnd>2891</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\IO\service_io.c</Filename><XPos>0</XPos><YPos>39</YPos><SelStart>250</SelStart><SelEnd>250</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\IO\service_io.h</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>384</SelStart><SelEnd>395</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\StepMotor\stepmotor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1044</SelStart><SelEnd>1044</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Output\Debug\List\Platform.map</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\JSN-SR04T\JSNSensor.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>595</SelStart><SelEnd>595</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\StepMotor\stepmotor.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Application\Main\main.c</Filename><XPos>0</XPos><YPos>28</YPos><SelStart>1204</SelStart><SelEnd>1204</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Lcd_1602\lcd16x2.c</Filename><XPos>0</XPos><YPos>24</YPos><SelStart>1415</SelStart><SelEnd>1415</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Dimmer\dimmer.c</Filename><XPos>0</XPos><YPos>18</YPos><SelStart>642</SelStart><SelEnd>642</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Timer\timer.c</Filename><XPos>0</XPos><YPos>14</YPos><SelStart>721</SelStart><SelEnd>721</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\types.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>148</SelStart><SelEnd>152</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\Uart\uart.c</Filename><XPos>0</XPos><YPos>113</YPos><SelStart>3880</SelStart><SelEnd>3880</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\PWM\pwm.c</Filename><XPos>0</XPos><YPos>41</YPos><SelStart>2522</SelStart><SelEnd>2522</SelEnd></Tab><ActiveTab>48</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Service\Dimmer\dimmer.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>146</SelStart><SelEnd>146</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\PWM\pwm.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>71</SelStart><SelEnd>71</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Hardware\System\system.c</Filename><XPos>0</XPos><YPos>69</YPos><SelStart>2739</SelStart><SelEnd>2739</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01dceb88><key>iaridepm.enu1</key></Toolbar-01dceb88></Sizes></Row0><Row1><Sizes><Toolbar-069663a0><key>debuggergui.enu1</key></Toolbar-069663a0></Sizes></Row1></Top><Left><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>494</Bottom><Right>287</Right><x>-2</x><y>-2</y><xscreen>496</xscreen><yscreen>79</yscreen><sizeHorzCX>363104</sizeHorzCX><sizeHorzCY>115160</sizeHorzCY><sizeVertCX>211567</sizeVertCX><sizeVertCY>723032</sizeVertCY></Rect></Wnd5></Sizes></Row0></Left><Right><Row0><Sizes><Wnd6><Rect><Top>-2</Top><Left>-2</Left><Bottom>494</Bottom><Right>220</Right><x>-2</x><y>-2</y><xscreen>412</xscreen><yscreen>205</yscreen><sizeHorzCX>301611</sizeHorzCX><sizeHorzCY>298834</sizeHorzCY><sizeVertCX>162518</sizeVertCX><sizeVertCY>723032</sizeVertCY></Rect></Wnd6></Sizes></Row0><Row1><Sizes><Wnd7><Rect><Top>-2</Top><Left>218</Left><Bottom>494</Bottom><Right>418</Right><x>218</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>723032</sizeVertCY></Rect></Wnd7></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>123</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>125</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>182216</sizeHorzCY><sizeVertCX>363104</sizeVertCX><sizeVertCY>115160</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

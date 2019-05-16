@@ -1,0 +1,664 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V5.50.8.52273/W32 for ARM              10/Dec/2017  21:52:03 #
+# Copyright (C) 2007-2011 IAR Systems AB.                                     #
+#                                                                             #
+#    Output file  =  H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK            #
+#                    v1.0\Output\Debug\Exe\Platform.out                       #
+#    Map file     =  H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK            #
+#                    v1.0\Output\Debug\List\Platform.map                      #
+#    Command line =  "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK           #
+#                    v1.0\Output\Debug\Obj\JSNSensor.o" "H:\IOT STM32F1       #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\adc.o" "H:\IOT STM32F1 DinhLK      #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\blinkled.o #
+#                    " "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK         #
+#                    v1.0\Output\Debug\Obj\buzz.o" "H:\IOT STM32F1 DinhLK     #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\core_cm3.o #
+#                    " "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK         #
+#                    v1.0\Output\Debug\Obj\device.o" "H:\IOT STM32F1 DinhLK   #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\dimmer.o"  #
+#                    "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK           #
+#                    v1.0\Output\Debug\Obj\ds18b20.o" "H:\IOT STM32F1 DinhLK  #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\flash.o"   #
+#                    "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK           #
+#                    v1.0\Output\Debug\Obj\hw_timer.o" "H:\IOT STM32F1        #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\io.o" "H:\IOT STM32F1 DinhLK       #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\lcd16x2.o" #
+#                     "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK          #
+#                    v1.0\Output\Debug\Obj\main.o" "H:\IOT STM32F1 DinhLK     #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\misc.o"    #
+#                    "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK           #
+#                    v1.0\Output\Debug\Obj\parameter.o" "H:\IOT STM32F1       #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\pwm.o" "H:\IOT STM32F1 DinhLK      #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\service_io #
+#                    .o" "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK       #
+#                    v1.0\Output\Debug\Obj\startup_stm32f10x_md.o" "H:\IOT    #
+#                    STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK                   #
+#                    v1.0\Output\Debug\Obj\stepmotor.o" "H:\IOT STM32F1       #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_adc.o" "H:\IOT STM32F1   #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_dma.o" "H:\IOT STM32F1   #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_exti.o" "H:\IOT STM32F1  #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_flash.o" "H:\IOT         #
+#                    STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK                   #
+#                    v1.0\Output\Debug\Obj\stm32f10x_gpio.o" "H:\IOT STM32F1  #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_iwdg.o" "H:\IOT STM32F1  #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_rcc.o" "H:\IOT STM32F1   #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_tim.o" "H:\IOT STM32F1   #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\stm32f10x_usart.o" "H:\IOT         #
+#                    STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK                   #
+#                    v1.0\Output\Debug\Obj\system.o" "H:\IOT STM32F1 DinhLK   #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\system_stm #
+#                    32f10x.o" "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1        #
+#                    DinhLK v1.0\Output\Debug\Obj\timer.o" "H:\IOT STM32F1    #
+#                    DinhLK v1.0\IOT STM32F1 DinhLK                           #
+#                    v1.0\Output\Debug\Obj\uart.o" "H:\IOT STM32F1 DinhLK     #
+#                    v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj\user_delay #
+#                    .o" -o "H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK    #
+#                    v1.0\Output\Debug\Exe\Platform.out" --map "H:\IOT        #
+#                    STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK                   #
+#                    v1.0\Output\Debug\List\Platform.map" --config "H:\IOT    #
+#                    STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK                   #
+#                    v1.0\stm32f100_flash.icf" --semihosting --entry          #
+#                    Reset_Handler                                            #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20001000] {
+          rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0xec
+  .intvec            ro code  0x08000000    0xec  startup_stm32f10x_md.o [1]
+                            - 0x080000ec    0xec
+
+"P1":                                     0x2ec4
+  .text              ro code  0x080000ec   0x5f4  uart.o [1]
+  .text              ro code  0x080006e0   0x420  parameter.o [1]
+  .text              ro code  0x08000b00   0x3dc  device.o [1]
+  .text              ro code  0x08000edc   0x2e8  stm32f10x_rcc.o [1]
+  .text              ro code  0x080011c4   0x208  stm32f10x_usart.o [1]
+  .text              ro code  0x080013cc   0x1f6  ds18b20.o [1]
+  .text              ro code  0x080015c4   0x1f0  timer.o [1]
+  .text              ro code  0x080017b4   0x1e8  stm32f10x_adc.o [1]
+  .text              ro code  0x0800199c   0x1a0  stm32f10x_dma.o [1]
+  .text              ro code  0x08001b3c   0x1a0  system_stm32f10x.o [1]
+  .text              ro code  0x08001cdc   0x19c  stm32f10x_flash.o [1]
+  .text              ro code  0x08001e78   0x194  adc.o [1]
+  .text              ro code  0x0800200c   0x17e  stm32f10x_gpio.o [1]
+  .text              ro code  0x0800218c   0x14c  JSNSensor.o [1]
+  .text              ro code  0x080022d8   0x120  stm32f10x_tim.o [1]
+  .text              ro code  0x080023f8   0x11e  main.o [1]
+  .text              ro code  0x08002518   0x114  system.o [1]
+  .text              ro code  0x0800262c    0xfc  hw_timer.o [1]
+  .text              ro code  0x08002728    0xfc  io.o [1]
+  .text              ro code  0x08002824    0xe8  service_io.o [1]
+  .text              ro code  0x0800290c    0xdc  stepmotor.o [1]
+  .text              ro code  0x080029e8    0xa4  buzz.o [1]
+  .text              ro code  0x08002a8c    0xa0  misc.o [1]
+  .text              ro code  0x08002b2c    0x90  blinkled.o [1]
+  .text              ro code  0x08002bbc    0x7c  flash.o [1]
+  .text              ro code  0x08002c38    0x70  ABImemcpy.o [4]
+  .text              ro code  0x08002ca8    0x3c  stm32f10x_exti.o [1]
+  .text              ro code  0x08002ce4    0x38  ABImemset48.o [4]
+  .text              ro code  0x08002d1c    0x30  iarttio.o [5]
+  .text              ro code  0x08002d4c    0x30  copy_init3.o [4]
+  .text              ro code  0x08002d7c    0x2c  dimmer.o [1]
+  .text              ro code  0x08002da8    0x2c  data_init3.o [4]
+  .text              ro code  0x08002dd4    0x24  zero_init3.o [4]
+  .iar.init_table    const    0x08002df8    0x24  - Linker created -
+  .text              ro code  0x08002e1c    0x16  cmain.o [4]
+  .text              ro code  0x08002e34    0x14  exit.o [5]
+  .text              ro code  0x08002e48    0x10  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002e58     0xc  cstartup_M.o [4]
+  .text              ro code  0x08002e64     0xa  cexit.o [4]
+  .rodata            const    0x08002e70     0x8  device.o [1]
+  .rodata            const    0x08002e78     0x8  parameter.o [1]
+  .text              ro code  0x08002e80     0x8  XShttio.o [3]
+  .text              ro code  0x08002e88     0x6  ABImemclr4.o [4]
+  .text              ro code  0x08002e8e     0x6  exit.o [3]
+  .rodata            const    0x08002e94     0x4  device.o [1]
+  .text              ro code  0x08002e98     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002e9c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ea0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ea4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ea8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002eac     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002eb0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002eb4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002eb8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ebc     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ec0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ec4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ec8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ecc     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ed0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ed4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ed8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002edc     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ee0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ee4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ee8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002eec     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ef0     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ef4     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002ef8     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002efc     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f00     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f04     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f08     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f0c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f10     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f14     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f18     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f1c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f20     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f24     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f28     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f2c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f30     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f34     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f38     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f3c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f40     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f44     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f48     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f4c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f50     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f54     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f58     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f5c     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f60     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f64     0x4  startup_stm32f10x_md.o [1]
+  .text              ro code  0x08002f68     0x4  low_level_init.o [3]
+  Initializer bytes  ro data  0x08002f6c    0x44  <for P2 s0> (used: 0x43)
+                            - 0x08002fb0  0x2ec4
+
+"P2", part 1 of 3:                         0x400
+  CSTACK                      0x20000000   0x400  <Block>
+    CSTACK           uninit   0x20000000   0x400  <Block tail>
+                            - 0x20000400   0x400
+
+"P2", part 2 of 3:                          0x44
+  P2 s0                       0x20000400    0x44  <Init block>
+    .data            inited   0x20000400    0x10  io.o [1]
+    .data            inited   0x20000410    0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x20000420     0xc  uart.o [1]
+    .data            inited   0x2000042c     0x8  XShttio.o [3]
+    .data            inited   0x20000434     0x4  device.o [1]
+    .data            inited   0x20000438     0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x2000043c     0x4  system_stm32f10x.o [1]
+    .data            inited   0x20000440     0x1  adc.o [1]
+    .data            inited   0x20000441     0x1  blinkled.o [1]
+    .data            inited   0x20000442     0x1  buzz.o [1]
+                            - 0x20000444    0x44
+
+"P2", part 3 of 3:                         0x85c
+  .bss               zero     0x20000444   0x400  timer.o [1]
+  .bss               zero     0x20000844   0x190  parameter.o [1]
+  .bss               zero     0x200009d4   0x100  uart.o [1]
+  .bss               zero     0x20000ad4   0x100  uart.o [1]
+  .bss               zero     0x20000bd4    0x40  device.o [1]
+  .bss               zero     0x20000c14    0x20  device.o [1]
+  .bss               zero     0x20000c34     0xc  device.o [1]
+  .bss               zero     0x20000c40     0xc  uart.o [1]
+  .bss               zero     0x20000c4c     0x8  dimmer.o [1]
+  .bss               zero     0x20000c54     0x8  parameter.o [1]
+  .bss               zero     0x20000c5c     0x4  JSNSensor.o [1]
+  .bss               zero     0x20000c60     0x4  adc.o [1]
+  .bss               zero     0x20000c64     0x4  device.o [1]
+  .bss               zero     0x20000c68     0x4  timer.o [1]
+  .bss               zero     0x20000c6c     0x4  timer.o [1]
+  .bss               zero     0x20000c70     0x4  uart.o [1]
+  .bss               zero     0x20000c74     0x4  uart.o [1]
+  .bss               zero     0x20000c78     0x2  JSNSensor.o [1]
+  .bss               zero     0x20000c7a     0x2  adc.o [1]
+  .bss               zero     0x20000c7c     0x2  adc.o [1]
+  .bss               zero     0x20000c7e     0x2  parameter.o [1]
+  .bss               zero     0x20000c80     0x2  stepmotor.o [1]
+  .bss               zero     0x20000c82     0x2  system.o [1]
+  .bss               zero     0x20000c84     0x2  system.o [1]
+  .bss               zero     0x20000c86     0x2  system.o [1]
+  .bss               zero     0x20000c88     0x2  uart.o [1]
+  .bss               zero     0x20000c8a     0x2  uart.o [1]
+  .bss               zero     0x20000c8c     0x2  uart.o [1]
+  .bss               zero     0x20000c8e     0x2  uart.o [1]
+  .bss               zero     0x20000c90     0x1  JSNSensor.o [1]
+  .bss               zero     0x20000c91     0x1  adc.o [1]
+  .bss               zero     0x20000c92     0x1  adc.o [1]
+  .bss               zero     0x20000c93     0x1  blinkled.o [1]
+  .bss               zero     0x20000c94     0x1  buzz.o [1]
+  .bss               zero     0x20000c95     0x1  device.o [1]
+  .bss               zero     0x20000c96     0x1  device.o [1]
+  .bss               zero     0x20000c97     0x1  device.o [1]
+  .bss               zero     0x20000c98     0x1  ds18b20.o [1]
+  .bss               zero     0x20000c99     0x1  parameter.o [1]
+  .bss               zero     0x20000c9a     0x1  uart.o [1]
+  .bss               zero     0x20000c9b     0x1  uart.o [1]
+  .bss               zero     0x20000c9c     0x1  uart.o [1]
+  .bss               zero     0x20000c9d     0x1  uart.o [1]
+                            - 0x20000c9e   0x85a
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x85a:
+          0x20000444  0x85a
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x44 (101% of destination):
+          0x08002f6c   0x44
+    1 destination range, total size 0x43:
+          0x20000400   0x43
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj: [1]
+    JSNSensor.o                 332                 7
+    adc.o                       404        1       11
+    blinkled.o                  144        1        2
+    buzz.o                      164        1        2
+    device.o                    988       16      119
+    dimmer.o                     44                 8
+    ds18b20.o                   502                 1
+    flash.o                     124
+    hw_timer.o                  252
+    io.o                        252       16       16
+    main.o                      286
+    misc.o                      160
+    parameter.o               1 056        8      411
+    service_io.o                232
+    startup_stm32f10x_md.o      460
+    stepmotor.o                 220                 2
+    stm32f10x_adc.o             488
+    stm32f10x_dma.o             416
+    stm32f10x_exti.o             60
+    stm32f10x_flash.o           412
+    stm32f10x_gpio.o            382
+    stm32f10x_rcc.o             744       20       20
+    stm32f10x_tim.o             288
+    stm32f10x_usart.o           520
+    system.o                    276                 6
+    system_stm32f10x.o          416        4        4
+    timer.o                     496             1 032
+    uart.o                    1 524       12      556
+    -------------------------------------------------
+    Total:                   11 642       79    2 197
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tl_in.a: [3]
+    XShttio.o                     8        8        8
+    exit.o                        6
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       18        8        8
+
+rt7M_tl.a: [4]
+    ABImemclr4.o                  6
+    ABImemcpy.o                 112
+    ABImemset48.o                56
+    cexit.o                      10
+    cmain.o                      22
+    copy_init3.o                 48
+    cstartup_M.o                 12
+    data_init3.o                 44
+    zero_init3.o                 36
+    -------------------------------------------------
+    Total:                      346
+
+shb_l.a: [5]
+    exit.o                       20
+    iarttio.o                    48
+    -------------------------------------------------
+    Total:                       68
+
+    Gaps                          8        2        1
+    Linker created                        37    1 024
+-----------------------------------------------------
+    Grand Total:             12 082      126    3 230
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x08002e1d         Code  Gb  cmain.o [4]
+ADC1_2_IRQHandler       0x08002f05         Code  Wk  startup_stm32f10x_md.o [1]
+ADCPrescTable           0x20000438    0x4  Data  Lc  stm32f10x_rcc.o [1]
+ADC_Cmd                 0x08001809   0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_DMACmd              0x08001823   0x1c  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetCalibrationStatus
+                        0x0800186d   0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetResetCalibrationStatus
+                        0x08001849   0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_Init                0x080017b5   0x54  Code  Gb  stm32f10x_adc.o [1]
+ADC_RegularChannelConfig
+                        0x080018a1   0xf2  Code  Gb  stm32f10x_adc.o [1]
+ADC_ResetCalibration    0x0800183f    0xa  Code  Gb  stm32f10x_adc.o [1]
+ADC_SoftwareStartConvCmd
+                        0x08001887   0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_StartCalibration    0x08001863    0xa  Code  Gb  stm32f10x_adc.o [1]
+APBAHBPrescTable        0x20000410   0x10  Data  Lc  stm32f10x_rcc.o [1]
+AllocatedBuffer         0x08000e4d   0x90  Code  Lc  device.o [1]
+BusFault_Handler        0x08002ea5         Code  Wk  startup_stm32f10x_md.o [1]
+BuzzOff                 0x08002a7d   0x10  Code  Gb  buzz.o [1]
+BuzzOn                  0x08002a6d   0x10  Code  Gb  buzz.o [1]
+BuzzProcess             0x08002a13   0x4c  Code  Gb  buzz.o [1]
+BuzzSet                 0x080029ff   0x14  Code  Gb  buzz.o [1]
+CAN1_RX1_IRQHandler     0x08002f11         Code  Wk  startup_stm32f10x_md.o [1]
+CAN1_SCE_IRQHandler     0x08002f15         Code  Wk  startup_stm32f10x_md.o [1]
+CSTACK$$Base            0x20000000          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000400          --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                        0x08002ee9         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel2_IRQHandler
+                        0x08002eed         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08002ef1         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel4_IRQHandler
+                        0x08002ef5         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel5_IRQHandler
+                        0x08002ef9         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel6_IRQHandler
+                        0x08002efd         Code  Wk  startup_stm32f10x_md.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08002f01         Code  Wk  startup_stm32f10x_md.o [1]
+DMA_Cmd                 0x08001ae5   0x1a  Code  Gb  stm32f10x_dma.o [1]
+DMA_DeInit              0x0800199d  0x108  Code  Gb  stm32f10x_dma.o [1]
+DMA_Init                0x08001aa5   0x40  Code  Gb  stm32f10x_dma.o [1]
+DS18B20_Init            0x080013cd   0x28  Code  Gb  ds18b20.o [1]
+DS18B20_ReadTemperature
+                        0x080013f5   0x80  Code  Gb  ds18b20.o [1]
+DebugMon_Handler        0x08002eb1         Code  Wk  startup_stm32f10x_md.o [1]
+DefineParamProc         0x080024b3   0x2c  Code  Lc  main.o [1]
+DisableHwTimer          0x080026e5   0x38  Code  Gb  hw_timer.o [1]
+EXTI0_IRQHandler        0x08002ed5         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI15_10_IRQHandler    0x08002f5d         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI1_IRQHandler        0x08002ed9         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI2_IRQHandler        0x08002edd         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI3_IRQHandler        0x08002ee1         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI4_IRQHandler        0x08002ee5         Code  Wk  startup_stm32f10x_md.o [1]
+EXTI9_5_IRQHandler      0x080021ad   0x2a  Code  Gb  JSNSensor.o [1]
+EXTI_ClearITPendingBit  0x08002cd5    0x6  Code  Gb  stm32f10x_exti.o [1]
+EXTI_GetITStatus        0x08002ca9   0x2c  Code  Gb  stm32f10x_exti.o [1]
+EnableHwTimer           0x08002699   0x4c  Code  Gb  hw_timer.o [1]
+EraseFlash              0x08002bbd   0x28  Code  Gb  flash.o [1]
+FLASH_ErasePage         0x08001d05   0x66  Code  Gb  stm32f10x_flash.o [1]
+FLASH_GetBank1Status    0x08001df9   0x36  Code  Gb  stm32f10x_flash.o [1]
+FLASH_IRQHandler        0x08002ecd         Code  Wk  startup_stm32f10x_md.o [1]
+FLASH_Lock              0x08001cf3   0x12  Code  Gb  stm32f10x_flash.o [1]
+FLASH_ProgramWord       0x08001d6b   0x8e  Code  Gb  stm32f10x_flash.o [1]
+FLASH_Unlock            0x08001cdd   0x16  Code  Gb  stm32f10x_flash.o [1]
+FLASH_WaitForLastOperation
+                        0x08001e49   0x30  Code  Gb  stm32f10x_flash.o [1]
+FlashToMemory           0x08002c31    0x8  Code  Gb  flash.o [1]
+FormatSection           0x08000a2b   0x24  Code  Lc  parameter.o [1]
+GPIO_Init               0x0800200d  0x150  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadInputData      0x0800215d    0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadOutputDataBit  0x08002163   0x1c  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x08002185    0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x0800217f    0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_UART_Configuration
+                        0x080005b3   0xb0  Code  Lc  uart.o [1]
+GetAllPins              0x08002805   0x1c  Code  Gb  io.o [1]
+GetCounter              0x0800271d    0xc  Code  Gb  hw_timer.o [1]
+GetDataSensor           0x0800245f   0x1a  Code  Gb  main.o [1]
+GetDeviceAddress        0x080024ff   0x18  Code  Lc  main.o [1]
+GetPin                  0x080027dd   0x28  Code  Gb  io.o [1]
+GetSecondCount          0x080025a5    0x6  Code  Gb  system.o [1]
+GetTickCount            0x0800259f    0x6  Code  Gb  system.o [1]
+HardFault_Handler       0x08002e9d         Code  Wk  startup_stm32f10x_md.o [1]
+HwTimer_Init            0x0800262d   0x44  Code  Gb  hw_timer.o [1]
+I2C1_ER_IRQHandler      0x08002f3d         Code  Wk  startup_stm32f10x_md.o [1]
+I2C1_EV_IRQHandler      0x08002f39         Code  Wk  startup_stm32f10x_md.o [1]
+I2C2_ER_IRQHandler      0x08002f45         Code  Wk  startup_stm32f10x_md.o [1]
+I2C2_EV_IRQHandler      0x08002f41         Code  Wk  startup_stm32f10x_md.o [1]
+InitADC                 0x08001e79   0xf8  Code  Gb  adc.o [1]
+InitBuzz                0x080029e9   0x16  Code  Gb  buzz.o [1]
+InitDevice              0x08000b01   0x64  Code  Gb  device.o [1]
+InitExternalInt         0x0800218d   0x20  Code  Gb  JSNSensor.o [1]
+InitIO                  0x08002729   0x24  Code  Gb  io.o [1]
+InitIOService           0x08002825   0xba  Code  Gb  service_io.o [1]
+InitJns                 0x0800229b   0x2a  Code  Gb  JSNSensor.o [1]
+InitLed                 0x08002b2d   0x14  Code  Gb  blinkled.o [1]
+InitParameter           0x080006e1  0x166  Code  Gb  parameter.o [1]
+InitRegister            0x08002479   0x3a  Code  Lc  main.o [1]
+InitStepMotor           0x0800290d   0x44  Code  Gb  stepmotor.o [1]
+InitSystem              0x08002585   0x1a  Code  Gb  system.o [1]
+LedOff                  0x08002baf    0xe  Code  Gb  blinkled.o [1]
+LedOn                   0x08002ba1    0xe  Code  Gb  blinkled.o [1]
+LedProcess              0x08002b55   0x40  Code  Gb  blinkled.o [1]
+LedSet                  0x08002b41   0x14  Code  Gb  blinkled.o [1]
+MemManage_Handler       0x08002ea1         Code  Wk  startup_stm32f10x_md.o [1]
+NMI_Handler             0x08002e99         Code  Wk  startup_stm32f10x_md.o [1]
+NVIC_DisableIRQ         0x08002519   0x18  Code  Lc  system.o [1]
+NVIC_Init               0x08002a97   0x6e  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x08002a8d    0xa  Code  Gb  misc.o [1]
+NVIC_SetPriority        0x08002531   0x22  Code  Lc  system.o [1]
+NVIC_SetVectorTable     0x08002b05    0xc  Code  Gb  misc.o [1]
+NVIC_UART_Configuration
+                        0x08000527   0x4a  Code  Lc  uart.o [1]
+NewItem                 0x0800097b   0x78  Code  Lc  parameter.o [1]
+OnDeviceRegisterProc    0x080024fd    0x2  Code  Lc  main.o [1]
+OnUartDataProc          0x08000bdd  0x14a  Code  Lc  device.o [1]
+OneStepMotorControl     0x08002965   0x7c  Code  Gb  stepmotor.o [1]
+OneWireReset            0x08001479   0x4e  Code  Lc  ds18b20.o [1]
+OpenUartPort            0x080000ed   0xa8  Code  Gb  uart.o [1]
+PARAM_ITEMS             0x20000844  0x190  Data  Gb  parameter.o [1]
+PVD_IRQHandler          0x08002ec1         Code  Wk  startup_stm32f10x_md.o [1]
+ParamChangeProc         0x080024f9    0x4  Code  Lc  main.o [1]
+PendSV_Handler          0x08002eb5         Code  Wk  startup_stm32f10x_md.o [1]
+PopulateParameters      0x08000d7b   0x54  Code  Lc  device.o [1]
+PopulateRegisters       0x08000b81   0x5c  Code  Gb  device.o [1]
+ProcessCustomRegister   0x08000d27   0x54  Code  Lc  device.o [1]
+ProcessTimerEvents      0x080015c5   0xaa  Code  Gb  timer.o [1]
+ProcessUartEvents       0x08000279  0x2ae  Code  Gb  uart.o [1]
+RCC_ADCCLKConfig        0x08000fd1   0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_AHBPeriphClockCmd   0x080010cb   0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08001107   0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080010e9   0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_DeInit              0x08000edd   0x5c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x08000fe7   0xe4  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetFlagStatus       0x0800112b   0x56  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetSYSCLKSource     0x08000f83    0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HCLKConfig          0x08000f8d   0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HSICmd              0x08000f39    0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08002ed1         Code  Wk  startup_stm32f10x_md.o [1]
+RCC_MCOConfig           0x08001125    0x6  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK1Config         0x08000fa3   0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK2Config         0x08000fb9   0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLCmd              0x08000f61    0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLConfig           0x08000f43   0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_SYSCLKConfig        0x08000f6b   0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_UART_Configuration  0x08000571   0x42  Code  Lc  uart.o [1]
+REGISTERS               0x20000434    0x4  Data  Gb  device.o [1]
+RTCAlarm_IRQHandler     0x08002f61         Code  Wk  startup_stm32f10x_md.o [1]
+RTC_IRQHandler          0x08002ec9         Code  Wk  startup_stm32f10x_md.o [1]
+ReadADC                 0x08001f71   0x1a  Code  Gb  adc.o [1]
+ReadADCProcess          0x08001f8b   0x54  Code  Gb  adc.o [1]
+ReadJnsProcess          0x080021d9   0xc2  Code  Gb  JSNSensor.o [1]
+ReadOneWireByte         0x080014c9   0x80  Code  Lc  ds18b20.o [1]
+Reboot                  0x080025ab   0x20  Code  Gb  system.o [1]
+Region$$Table$$Base     0x08002df8          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08002e1c          --   Gb  - Linker created -
+RegisterDeviceCallback  0x08000b65   0x10  Code  Gb  device.o [1]
+RegisterParamCallback   0x0800096b   0x10  Code  Gb  parameter.o [1]
+RegisterUartCallback    0x08000267   0x12  Code  Gb  uart.o [1]
+ResetDevice             0x08000b75    0xc  Code  Gb  device.o [1]
+ResetParams             0x080008c3   0xa8  Code  Gb  parameter.o [1]
+Reset_Handler           0x08002e49         Code  Wk  startup_stm32f10x_md.o [1]
+SPI1_IRQHandler         0x08002f49         Code  Wk  startup_stm32f10x_md.o [1]
+SPI2_IRQHandler         0x08002f4d         Code  Wk  startup_stm32f10x_md.o [1]
+SVC_Handler             0x08002ead         Code  Wk  startup_stm32f10x_md.o [1]
+SearchItem              0x080009f3   0x38  Code  Lc  parameter.o [1]
+SendDefinitionProc      0x08000dff   0x18  Code  Lc  device.o [1]
+SetDimmerChannel        0x08002d7d   0x26  Code  Gb  dimmer.o [1]
+SetDirPin               0x0800274d   0x54  Code  Gb  io.o [1]
+SetIOState              0x080028df   0x2e  Code  Gb  service_io.o [1]
+SetParam                0x08000847   0x7c  Code  Gb  parameter.o [1]
+SetPin                  0x080027a1   0x3c  Code  Gb  io.o [1]
+SetSysClock             0x08001b87    0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo24         0x08001b8f  0x134  Code  Lc  system_stm32f10x.o [1]
+StartLongTimer          0x0800166f   0x9c  Code  Gb  timer.o [1]
+StartShortTimer         0x0800170b   0x9c  Code  Gb  timer.o [1]
+StepMotorControl        0x08002951   0x14  Code  Gb  stepmotor.o [1]
+SwapSections            0x08000a4f   0x96  Code  Lc  parameter.o [1]
+SysTick_Config          0x08002553   0x32  Code  Lc  system.o [1]
+SysTick_Handler         0x080025cb   0x32  Code  Gb  system.o [1]
+SystemCoreClock         0x2000043c    0x4  Data  Gb  system_stm32f10x.o [1]
+SystemInit              0x08001b3d   0x4a  Code  Gb  system_stm32f10x.o [1]
+TAMPER_IRQHandler       0x08002ec5         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_BRK_IRQHandler     0x08002f1d         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_CC_IRQHandler      0x08002f29         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x08002f25         Code  Wk  startup_stm32f10x_md.o [1]
+TIM1_UP_IRQHandler      0x08002f21         Code  Wk  startup_stm32f10x_md.o [1]
+TIM2_IRQHandler         0x08002679   0x20  Code  Gb  hw_timer.o [1]
+TIM3_IRQHandler         0x08002f31         Code  Wk  startup_stm32f10x_md.o [1]
+TIM4_IRQHandler         0x08002f35         Code  Wk  startup_stm32f10x_md.o [1]
+TIM_ClearITPendingBit   0x080023f1    0x8  Code  Gb  stm32f10x_tim.o [1]
+TIM_Cmd                 0x08002381   0x1a  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetCounter          0x080023b5    0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus         0x080023b9   0x38  Code  Gb  stm32f10x_tim.o [1]
+TIM_ITConfig            0x0800239b   0x16  Code  Gb  stm32f10x_tim.o [1]
+TIM_SetCounter          0x080023b1    0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit        0x080022d9   0x7e  Code  Gb  stm32f10x_tim.o [1]
+Temperature             0x20000c98    0x1  Data  Gb  ds18b20.o [1]
+USART1_IRQHandler       0x08002f51         Code  Wk  startup_stm32f10x_md.o [1]
+USART2_IRQHandler       0x08000663   0x38  Code  Gb  uart.o [1]
+USART3_IRQHandler       0x08002f59         Code  Wk  startup_stm32f10x_md.o [1]
+USART_Cmd               0x080012ad   0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus     0x08001335   0x22  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus       0x08001357   0x76  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig          0x080012c7   0x5e  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x080011c5   0xe2  Code  Gb  stm32f10x_usart.o [1]
+USART_ReceiveData       0x0800132d    0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData          0x08001325    0x8  Code  Gb  stm32f10x_usart.o [1]
+USBWakeUp_IRQHandler    0x08002f65         Code  Wk  startup_stm32f10x_md.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                        0x08002f09         Code  Wk  startup_stm32f10x_md.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x08002f0d         Code  Wk  startup_stm32f10x_md.o [1]
+UpdateRegisterProc      0x08000dcf   0x30  Code  Lc  device.o [1]
+UsageFault_Handler      0x08002ea9         Code  Wk  startup_stm32f10x_md.o [1]
+WWDG_IRQHandler         0x08002ebd         Code  Wk  startup_stm32f10x_md.o [1]
+WriteFlash              0x08002be5   0x4c  Code  Gb  flash.o [1]
+WriteOneWireByte        0x08001549   0x7a  Code  Lc  ds18b20.o [1]
+WriteUartTransmit       0x08000195   0xd2  Code  Gb  uart.o [1]
+__aeabi_memclr4         0x08002e89         Code  Gb  ABImemclr4.o [4]
+__aeabi_memcpy          0x08002c39         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x08002c53         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8         0x08002c53         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset4         0x08002ce5         Code  Gb  ABImemset48.o [4]
+__aeabi_memset8         0x08002ce5         Code  Gb  ABImemset48.o [4]
+__cmain                 0x08002e1d         Code  Gb  cmain.o [4]
+__exit                  0x08002e35   0x14  Code  Gb  exit.o [5]
+__iar_Memset4_word      0x08002ced         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word      0x08002ced         Code  Gb  ABImemset48.o [4]
+__iar_close_ttio        0x08002d1d   0x2e  Code  Gb  iarttio.o [5]
+__iar_copy_init3        0x08002d4d   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x08002da9   0x2c  Code  Gb  data_init3.o [4]
+__iar_lookup_ttioh      0x08002e81    0x8  Code  Gb  XShttio.o [3]
+__iar_program_start     0x08002e59         Code  Gb  cstartup_M.o [4]
+__iar_ttio_handles      0x2000042c    0x8  Data  Lc  XShttio.o [3]
+__iar_zero_init3        0x08002dd5   0x24  Code  Gb  zero_init3.o [4]
+__low_level_init        0x08002f69    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f10x_md.o [1]
+_call_main              0x08002e29         Code  Gb  cmain.o [4]
+_exit                   0x08002e65         Code  Gb  cexit.o [4]
+_main                   0x08002e2f         Code  Gb  cmain.o [4]
+exit                    0x08002e8f    0x6  Code  Gb  exit.o [3]
+fnUartCallBack          0x20000c74    0x4  Data  Lc  uart.o [1]
+gFlag                   0x20000441    0x1  Data  Lc  blinkled.o [1]
+gFlag                   0x20000442    0x1  Data  Lc  buzz.o [1]
+gNumber                 0x20000c93    0x1  Data  Lc  blinkled.o [1]
+gNumber                 0x20000c94    0x1  Data  Lc  buzz.o [1]
+g_Distant               0x20000c78    0x2  Data  Lc  JSNSensor.o [1]
+g_Offset                0x20000440    0x1  Data  Gb  adc.o [1]
+g_Step                  0x20000c80    0x2  Data  Lc  stepmotor.o [1]
+g_Timer                 0x20000c5c    0x4  Data  Gb  JSNSensor.o [1]
+g_ValueVotage           0x20000c91    0x1  Data  Gb  adc.o [1]
+g_arADC                 0x20000c60    0x4  Data  Gb  adc.o [1]
+g_arADC_0               0x20000c7a    0x2  Data  Gb  adc.o [1]
+g_arADC_1               0x20000c7c    0x2  Data  Gb  adc.o [1]
+g_arSetChannel          0x20000c4c    0x8  Data  Lc  dimmer.o [1]
+g_nActiveSection        0x20000c7e    0x2  Data  Lc  parameter.o [1]
+g_nBufferIndex          0x20000c9d    0x1  Data  Lc  uart.o [1]
+g_nDeviceAddr           0x20000c95    0x1  Data  Lc  device.o [1]
+g_nPackageIndex         0x20000c9c    0x1  Data  Lc  uart.o [1]
+g_nParamCount           0x20000c99    0x1  Data  Gb  parameter.o [1]
+g_nPendingRegisterCount
+                        0x20000c97    0x1  Data  Lc  device.o [1]
+g_nProcessIndex         0x20000c9b    0x1  Data  Lc  uart.o [1]
+g_nRegisterValue        0x20000c96    0x1  Data  Lc  device.o [1]
+g_nUartPort             0x20000c9a    0x1  Data  Gb  uart.o [1]
+g_pDeviceEvents         0x20000c34    0xc  Data  Lc  device.o [1]
+g_pH                    0x20000c92    0x1  Data  Gb  adc.o [1]
+g_pParamEvents          0x20000c54    0x8  Data  Lc  parameter.o [1]
+g_pPendingRegisters     0x20000c14   0x20  Data  Lc  device.o [1]
+g_pReceiveBuffer        0x20000ad4  0x100  Data  Lc  uart.o [1]
+g_pReceivePackage       0x200009d4  0x100  Data  Lc  uart.o [1]
+g_pRegisterEvent        0x20000c64    0x4  Data  Lc  device.o [1]
+g_pRegisters            0x20000bd4   0x40  Data  Lc  device.o [1]
+g_pTimers               0x20000444  0x400  Data  Lc  timer.o [1]
+g_pUartDef              0x20000420    0xc  Data  Lc  uart.o [1]
+g_stIOPort              0x20000400   0x10  Data  Lc  io.o [1]
+g_stUartBuffer          0x20000c40    0xc  Data  Lc  uart.o [1]
+g_wSecondCount          0x20000c84    0x2  Data  Lc  system.o [1]
+g_wTemp                 0x20000c86    0x2  Data  Lc  system.o [1]
+g_wTickCount            0x20000c82    0x2  Data  Lc  system.o [1]
+m_stUartBuffer          0x20000c70    0x4  Data  Lc  uart.o [1]
+main                    0x080023f9   0x66  Code  Gb  main.o [1]
+nDimmer                 0x20000c8e    0x2  Data  Gb  uart.o [1]
+nI1                     0x20000c88    0x2  Data  Gb  uart.o [1]
+nI2                     0x20000c8a    0x2  Data  Gb  uart.o [1]
+nI3                     0x20000c8c    0x2  Data  Gb  uart.o [1]
+test_interrupt          0x20000c90    0x1  Data  Gb  JSNSensor.o [1]
+
+
+[1] = H:\IOT STM32F1 DinhLK v1.0\IOT STM32F1 DinhLK v1.0\Output\Debug\Obj
+[2] = command line
+[3] = dl7M_tl_in.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  12 082 bytes of readonly  code memory
+     126 bytes of readonly  data memory
+   3 230 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

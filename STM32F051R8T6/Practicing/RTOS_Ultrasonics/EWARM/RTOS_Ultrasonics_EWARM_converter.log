@@ -1,0 +1,7 @@
+Project: RTOS_Ultrasonics_EWARM
+Converter: IARProjectParser
+Date: 20190405
+
+Project needs GCC compatible startup code and linker script
+RTOS_Ultrasonics: FPU set to default FPU for device: None.
+RTOS_Ultrasonics: FPU set to default FPU for device: None.
