@@ -1,0 +1,16 @@
+
+Mini-STM32 SD/MMC WAV Audio Player
+yus	- http://projectproto.blogspot.com/
+June 2010
+
+Simple SD Audio Player with an 8-pin IC
+http://elm-chan.org/works/sd8p/report.html
+
+WAVE PCM soundfile format
+https://ccrma.stanford.edu/courses/422/projects/WaveFormat/
+
+CooCox CoOS real-time multi-task OS specially for ARM Cortex M series
+http://www.coocox.org/CoOS.htm
+
+DSP (Fast Fourier Transform) libraries for ARM Cortex M3
+http://www.embeddedsignals.com/ARM.htm

@@ -1,0 +1,60 @@
+*** Creating Trace Output File '.\Obj\WAV_Player_MiniSTM32.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\pwm_audio.o"'
+### List of Objects: adding '".\obj\stm32f10x_it.o"'
+### List of Objects: adding '".\obj\wave_file.o"'
+### List of Objects: adding '".\obj\pff.o"'
+### List of Objects: adding '".\obj\sd_mmc.o"'
+### List of Objects: adding '".\obj\core.o"'
+### List of Objects: adding '".\obj\event.o"'
+### List of Objects: adding '".\obj\flag.o"'
+### List of Objects: adding '".\obj\hook.o"'
+### List of Objects: adding '".\obj\kernelheap.o"'
+### List of Objects: adding '".\obj\mbox.o"'
+### List of Objects: adding '".\obj\mm.o"'
+### List of Objects: adding '".\obj\mutex.o"'
+### List of Objects: adding '".\obj\queue.o"'
+### List of Objects: adding '".\obj\sem.o"'
+### List of Objects: adding '".\obj\servicereq.o"'
+### List of Objects: adding '".\obj\task.o"'
+### List of Objects: adding '".\obj\time.o"'
+### List of Objects: adding '".\obj\timer.o"'
+### List of Objects: adding '".\obj\utility.o"'
+### List of Objects: adding '".\obj\arch.o"'
+### List of Objects: adding '".\obj\port.o"'
+### List of Objects: adding '".\obj\ek_fft128real_32b.o"'
+### List of Objects: adding '".\obj\ek_magnitude.o"'
+### List of Objects: adding '".\obj\ek_window16to32b_real.o"'
+### List of Objects: adding '".\obj\ministm32_lcd.o"'
+### List of Objects: adding '".\obj\ministm32_pwm.o"'
+### List of Objects: adding '".\obj\ministm32_spi.o"'
+### List of Objects: adding '".\obj\ministm32_led.o"'
+### List of Objects: adding '".\obj\ministm32_pb.o"'
+### List of Objects: adding '".\obj\core_cm3.o"'
+### List of Objects: adding '".\obj\system_stm32f10x.o"'
+### List of Objects: adding '".\obj\startup_stm32f10x_md.o"'
+### List of Objects: adding '".\obj\misc.o"'
+### List of Objects: adding '".\obj\stm32f10x_exti.o"'
+### List of Objects: adding '".\obj\stm32f10x_flash.o"'
+### List of Objects: adding '".\obj\stm32f10x_gpio.o"'
+### List of Objects: adding '".\obj\stm32f10x_rcc.o"'
+### List of Objects: adding '".\obj\stm32f10x_spi.o"'
+### List of Objects: adding '".\obj\stm32f10x_tim.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\main.o" ".\obj\pwm_audio.o" ".\obj\stm32f10x_it.o" ".\obj\wave_file.o" ".\obj\pff.o" ".\obj\sd_mmc.o" ".\obj\core.o" ".\obj\event.o" ".\obj\flag.o" ".\obj\hook.o" ".\obj\kernelheap.o" ".\obj\mbox.o" ".\obj\mm.o" ".\obj\mutex.o" ".\obj\queue.o" ".\obj\sem.o" ".\obj\servicereq.o" ".\obj\task.o" ".\obj\time.o" ".\obj\timer.o" ".\obj\utility.o" ".\obj\arch.o" ".\obj\port.o" ".\obj\ek_fft128real_32b.o" ".\obj\ek_magnitude.o" ".\obj\ek_window16to32b_real.o" ".\obj\ministm32_lcd.o" ".\obj\ministm32_pwm.o" ".\obj\ministm32_spi.o" ".\obj\ministm32_led.o" ".\obj\ministm32_pb.o" ".\obj\core_cm3.o" ".\obj\system_stm32f10x.o" ".\obj\startup_stm32f10x_md.o" ".\obj\misc.o" ".\obj\stm32f10x_exti.o" ".\obj\stm32f10x_flash.o" ".\obj\stm32f10x_gpio.o" ".\obj\stm32f10x_rcc.o" ".\obj\stm32f10x_spi.o" ".\obj\stm32f10x_tim.o" 
+--strict --scatter ".\Obj\WAV_Player_MiniSTM32.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\List\WAV_Player_MiniSTM32.map" -o .\Obj\WAV_Player_MiniSTM32.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\WAV_Player_MiniSTM32.axf'
+### ADS-LD Command File: '.\Obj\WAV_Player_MiniSTM32.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\WAV_Player_MiniSTM32.lnp', Handle=0x000002EC
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\WAV_Player_MiniSTM32.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
