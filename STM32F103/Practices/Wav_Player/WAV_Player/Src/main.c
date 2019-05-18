@@ -51,6 +51,12 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "fatfs.h"
+#include "stm32f1xx_hal_uart.h"
+#include <string.h>
+#include "ff.h"
+#include "wave_file.h"
+#include "pwm_audio.h"
+#include "user_usart.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -82,6 +88,10 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 
+FATFS Fs;			/* File system object */
+DIR Dir;			/* Directory object */
+FILINFO Fno;		/* File information */
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -90,7 +100,7 @@ static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM4_Init(void);
 static void MX_TIM2_Init(void);
-static void MX_USART1_UART_Init(void);
+// void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -107,7 +117,7 @@ static void MX_USART1_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	char arString[100];
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -128,25 +138,50 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_SPI1_Init();
-  MX_TIM4_Init();
-  MX_TIM2_Init();
+  if (1 == 0)
+  {
+	   MX_SPI1_Init();
+	   MX_TIM4_Init();
+	   MX_TIM2_Init();
+  }
+
   MX_FATFS_Init();
-  MX_USART1_UART_Init();
+  USART1_Configuration();
+ // MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  HAL_Delay(1000);
   while (1)
   {
+	  HAL_Delay(1000);
     /* USER CODE END WHILE */
-
+	  if (f_mount(&Fs, "", 0))
+		  continue;	/* Initialize FS */
+		printf("\n\r Mount Disk Is Ok\n");
+		while(1)
+		{
+				if (f_opendir(&Dir, ""))
+						break;				// open root directory
+				printf("\n\r Open Root Directory Is Ok\n");
+				while (!f_readdir(&Dir, &Fno) && Fno.fname[0])
+				{
+						if (strstr(Fno.fname, ".WAV") )
+						{
+							  printf("\n\r Mini-STM32 WAVE Audio Player\n");
+							  sprintf(arString, "Play With File name: %s \n", Fno.fname);
+							  printf("\n\r  arString");
+							  play_wave_file(Fno.fname);;
+						}
+				}
+		}
+}
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
 
 /**
   * @brief System Clock Configuration
@@ -317,39 +352,6 @@ static void MX_TIM4_Init(void)
 
   /* USER CODE END TIM4_Init 2 */
   HAL_TIM_MspPostInit(&htim4);
-
-}
-
-/**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
 
 }
 

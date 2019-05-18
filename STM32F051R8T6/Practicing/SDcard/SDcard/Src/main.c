@@ -388,7 +388,7 @@ void StartDefaultTask(void const * argument)
   total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
   free = (uint32_t)(fre_clust * pfs->csize * 0.5);
 
-  /* Free space is less than 1kb */
+  /* Free space oi tais less than 1kb */
   if(free < 1)
     _Error_Handler(__FILE__, __LINE__);
 

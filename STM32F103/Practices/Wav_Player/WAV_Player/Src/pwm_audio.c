@@ -79,19 +79,19 @@ void TIM2_IRQHandler(void)
       pWAVOUT_3 &= WAV_BUFFER_MASK;
 		if (pWAVOUT == pWAVIN)		
 		{
-				HAL_TIM_Base_Stop_IT(htim2);
+				HAL_TIM_Base_Stop_IT(&htim2);
 		}
 		if (pWAVOUT_3 == pWAVIN_3)		// if buffer is empty
 		{
-				HAL_TIM_Base_Stop_IT(htim2);
+				HAL_TIM_Base_Stop_IT(&htim2);
 		}
-		__HAL_TIM_CLEAR_IT(htim2,TIM_IT_UPDATE);
+		__HAL_TIM_CLEAR_IT(&htim2,TIM_IT_UPDATE);
 }
 
 void pwm_audio_init(void)
 {
 		PWM_init();
-		TIM2_init();
+		MX_TIM2_Init();
 		pWAVIN = pWAVOUT = 0;	
 	    pWAVIN_3 = pWAVOUT_3 = 0;
 }
@@ -120,5 +120,5 @@ void wav_putc_3(unsigned char c)
 		//while (((pWAVIN_3 + 1) & WAV_BUFFER_MASK) == pWAVOUT_3);
 		WAV_BUFF_3[pWAVIN_3] = c;
 		pWAVIN_3 = (pWAVIN_3 + 1) & WAV_BUFFER_MASK;	// increment input WAV buffer pointer
-		HAL_TIM_Base_Start_IT(htim2);
+		HAL_TIM_Base_Start_IT(&htim2);
 }
