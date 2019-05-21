@@ -30,7 +30,7 @@ extern FATFS Fs;			/* File system object */
 /*---------------------------------------------------------*/
 
 static
-DWORD load_header(FIL* fil)	/* 0:Invalid format, 1:I/O error, >1:Number of samples */
+DWORD load_header(FIL fil)	/* 0:Invalid format, 1:I/O error, >1:Number of samples */
 {
 		DWORD ChunkID, SamplingRate, sz, Length;
 		char str[20];
@@ -89,7 +89,7 @@ DWORD load_header(FIL* fil)	/* 0:Invalid format, 1:I/O error, >1:Number of sampl
 								return sz;
 						case LIST_chunk:				/* 'LIST' chunk (skip) */
 						case fact_chunk:				/* 'fact' chunk (skip) */
-							//	f_lseek(Fs.fptr + sz);
+								f_lseek(&fil, sz);
 								break;
 						default :								/* Unknown chunk (error) */
 								return 0;
@@ -108,7 +108,7 @@ UINT play_wave_file(const char *fn)
 		if(f_open(&fil, fn, FA_OPEN_ALWAYS | FA_READ | FA_WRITE)== FR_OK)
 		{
 				//LCD_Text(70, 70, fn, LCD_Yellow, LCD_Red);
-				sz = load_header(&fil);			/* Load file header */
+				sz = load_header(fil);			/* Load file header */
 				if (sz < 256) 
 						return (UINT)sz;
 				enable_audio();

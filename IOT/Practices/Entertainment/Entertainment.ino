@@ -42,14 +42,15 @@ void onChanelChange(boolean b) {
     Serial.printf("onChanelChange: b: %d\n",b);
     if (b == true )
     {
-       irsend.sendNEC(0x00FFE01FUL);
-       delay(2000);
+        Serial.println("Chanel UP");
+        irsend.sendNEC(0xFD609FUL)
+        delay(2000);
     }
 
     else 
     {
-       irsend.sendNEC(0x00FFE01FUL);
-       delay(2000);    
+       Serial.println("Chanel DOWN");
+       irsend.sendNEC(0xFD6897UL);   
     }
 
 }
@@ -93,9 +94,10 @@ void onVolumeChange(boolean b) {
     Serial.printf("onVolumeChange: b: %d\n",b);
         if (b == true )
     {
+      Serial.println("Volume up");
       for(int i = 0;i <3;i++)
       {
-        irsend.sendNEC(0x00FFE01FUL);
+        irsend.sendNEC(0xFDD827UL);
       }
        
        delay(2000);
@@ -103,9 +105,10 @@ void onVolumeChange(boolean b) {
 
     else 
     {
+      Serial.println("Volume down");
        for(int i = 0;i <3;i++)
       {
-        irsend.sendNEC(0x00FFE01FUL);
+        irsend.sendNEC(0xFD5AA5UL);
       }
        delay(2000);    
     }
