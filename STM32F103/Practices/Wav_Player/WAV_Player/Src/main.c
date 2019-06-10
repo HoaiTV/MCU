@@ -89,8 +89,17 @@ UART_HandleTypeDef huart1;
 /* USER CODE BEGIN PV */
 
 FATFS Fs;			/* File system object */
-DIR Dir;			/* Directory object */
-FILINFO Fno;		/* File information */
+//DIR Dir;			/* Directory object */
+//FILINFO Fno;		/* File information */
+FATFS *pfs;
+FIL fil;
+FRESULT fres;
+DWORD fre_clust;
+uint32_t total, free;
+char buffer[100];
+char buffer[10];
+
+
 
 /* USER CODE END PV */
 
@@ -117,7 +126,7 @@ static void MX_TIM2_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	char arString[100];
+	//char arString[100];
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -162,21 +171,60 @@ int main(void)
 	  if (f_mount(&Fs, "", 0))
 		  continue;	/* Initialize FS */
 		printf("\n\r Mount Disk Is Ok\n");
+
+		  /* Open file to write */
+		  if(f_open(&fil, "first.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) != FR_OK)
+		    Error_Handler();
+		  /* Check free space */
+		  if(f_getfree("", &fre_clust, &pfs) != FR_OK)
+			  Error_Handler();
+
+		  total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
+		  free = (uint32_t)(fre_clust * pfs->csize * 0.5);
+
+		  /* Free space is less than 1kb */
+		  if(free < 1)
+			  Error_Handler();
+
+		  /* Writing text */
+		  f_puts("STM32 SD Card I/O Example via SPI\n", &fil);
+		  f_puts("Save the world!!!", &fil);
+
+		  /* Close file */
+		  if(f_close(&fil) != FR_OK)
+			  Error_Handler();
+
+		  /* Open file to read */
+		  if(f_open(&fil, "first.txt", FA_READ) != FR_OK)
+			  Error_Handler();
+
+	  while(f_gets(buffer, sizeof(buffer), &fil))
+	  {
+	    printf("%s", buffer);
+	  }
+	  /* Close file */
+	  if(f_close(&fil) != FR_OK)
+		  Error_Handler();
+	  /* Unmount SDCARD */
+	  if(f_mount(NULL, "", 1) != FR_OK)
+		  Error_Handler();
+	  /* USER CODE END 2 */
+
 		while(1)
 		{
-				if (f_opendir(&Dir, ""))
-						break;				// open root directory
-				printf("\n\r Open Root Directory Is Ok\n");
-				while (!f_readdir(&Dir, &Fno) && Fno.fname[0])
-				{
-						if (strstr(Fno.fname, ".WAV") )
-						{
-							  printf("\n\r Mini-STM32 WAVE Audio Player\n");
-							  sprintf(arString, "Play With File name: %s \n", Fno.fname);
-							  printf("\n\r  arString");
-							  play_wave_file(Fno.fname);;
-						}
-				}
+//				if (f_opendir(&Dir, ""))
+//						break;				// open root directory
+//				printf("\n\r Open Root Directory Is Ok\n");
+//				while (!f_readdir(&Dir, &Fno) && Fno.fname[0])
+//				{
+//						if (strstr(Fno.fname, ".WAV") )
+//						{
+//							  printf("\n\r Mini-STM32 WAVE Audio Player\n");
+//							  sprintf(arString, "Play With File name: %s \n", Fno.fname);
+//							  printf("\n\r  arString");
+//							  play_wave_file(Fno.fname);;
+//						}
+//				}
 		}
 }
     /* USER CODE BEGIN 3 */

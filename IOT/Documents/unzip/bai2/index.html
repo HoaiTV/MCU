@@ -1,0 +1,331 @@
+const char html_page[] PROGMEM = R"==(
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESP8266 WS</title>
+  <style type="text/css">
+    .slidecontainer {
+      width: 100%;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      width: 250px;
+      height: 15px;
+      border-radius: 5px;
+      background: #d3d3d3;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .0s;
+      transition: opacity .2s;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #326C88;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #326C88;
+      cursor: pointer;
+    }
+
+    /* Rounded switch */
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider1 {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider1:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .2s;
+      transition: .2s;
+    }
+
+    input:checked+.slider1 {
+      background-color: #3bbb52;
+      ;
+    }
+
+    input:focus+.slider1 {
+      box-shadow: 0 0 1px #326C88;
+    }
+
+    input:checked+.slider1:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    .slider1.round {
+      border-radius: 34px;
+    }
+
+    .slider1.round:before {
+      border-radius: 50%;
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #header {
+      width: 100%;
+      height: 70px;
+      background-color: #404e67;
+      border-bottom: 2px solid #555555;
+    }
+
+    #header img {
+      padding: 5px 10px 0px 30px;
+      float: left;
+    }
+
+    h1 {
+      padding-top: 16px;
+      color: #fff;
+      float: left;
+    }
+
+    #wrap {
+      width: 100%;
+      height: 590px;
+      line-height: 1.5;
+      background-color: #f3f3f3;
+      font-family: open sans, sans-serif;
+    }
+   
+
+    #container {
+      width: 100%;
+      height: 120px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .card-block {
+      width: 280px;
+      height: 100px;
+      color: #fff;
+      margin-left: 20px;
+      border-radius: 5px;
+      float: left;
+      /* box-shadow: 2px 2px 5px grey; */
+    }
+
+    #temp {
+      background: #c56840;
+    }
+
+    #humi {
+      background: #729bf3;
+    }
+
+    #light {
+      background: #dfdd7c;
+    }
+
+    .card-block p {
+      padding-left: 10px;
+      font-size: 17px;
+      border-bottom: 1px solid #f3f3f3;
+    }
+
+    .card-block h4 {
+      padding-left: 10px;
+      font-size: 50px;
+    }
+
+    table {
+      width: 50%;
+      height: 200px;
+      margin-left: 20px;
+      float: left;
+      border: 1px solid cadetblue;
+      border-collapse: collapse;
+    }
+
+    table tr th {
+      font-size: 25px;
+      color: #fff;
+      background-color: #0B0B61;
+    }
+
+    table tr td {
+      padding: 10px 10px;
+    }
+
+
+
+
+    
+
+    .button {
+      background-color: #555555;
+      border: 2px solid #555555;
+      color: #fff;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 50px 120px;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+
+<body >
+  <div id="header">
+    
+    <h1>HA NHU THAI-PTIT</h1>
+  </div>
+
+  <div id="wrap">
+    
+
+    <table>
+      <tr>
+        <th colspan="3">Control Device</th>
+      </tr>
+
+      <tr>
+        <td>
+          <p>LED1: <span id="led1">OFF</span></p>
+        </td>
+
+        <td>
+          <label class="switch">
+            <input type="checkbox" name="button" value="led1" onchange="state_change(this)">   <!--state_change để kiểm tra led,khi nhấn button sẽ gọi hàm state train --> 
+            <span class="slider1 round"></span>
+          </label>
+        </td>
+
+        <td>
+          <input type="range" min="0" max="255" value="125" class="slider">
+          <span id="PWM1"></span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <p>LED2: <span id="led2">OFF</span></p>
+        </td>
+
+        <td>
+          <label class="switch">
+            <input type="checkbox" name="button" value="led2" onchange="state_change(this)">
+            <span class="slider1 round"></span>
+          </label>
+        </td>
+
+        <td>
+          <input type="range" min="0" max="255" value="125" class="slider">
+          <span id="PWM2"></span>
+        </td>
+      </tr>
+
+     
+    </table>
+
+
+  </div>
+
+  <script>        //nhận giá trị
+    var slider = document.getElementsByClassName("slider");
+    var output0 = document.getElementById("PWM1");
+    var output1 = document.getElementById("PWM2");
+    
+
+    
+    slider[0].onchange = function () {               
+      
+      pwm_change(output0.id, this.value);      
+    }
+
+    slider[1].onchange = function () {
+      
+      pwm_change(output1.id, this.value);
+    }
+
+  </script>
+
+  <script>
+    function pwm_change(name, val) {
+      var xhttp = new XMLHttpRequest();     //quét trang html
+      xhttp.open("GET", "setPWM?PWNPin=" + name + "&PWNval=" + val, true);    //mở
+      xhttp.send();                   //gửi
+    }
+  </script>
+
+  <script>//on off
+    function state_change(element) {    //thay đổi trang thái
+      var xhttp = new XMLHttpRequest();
+
+      if (element.checked) {        
+        xhttp.open("GET", "setButton?button_state=" + element.value + "ON", true);
+        document.getElementById(element.value).innerHTML = "ON";
+        document.getElementById(element.value).style.color = "green";
+      } else if (!element.checked) {
+        xhttp.open("GET", "setButton?button_state=" + element.value + "OFF", true);
+        document.getElementById(element.value).innerHTML = "OFF";
+        document.getElementById(element.value).style.color = "red";
+      }
+      xhttp.send();
+    }
+  </script>
+
+
+</body> 
+</html>
+
+
+
+
+)==";

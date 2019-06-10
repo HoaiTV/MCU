@@ -52,6 +52,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "fatfs.h"
+//#include "stm32f0xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -369,7 +370,7 @@ static void MX_GPIO_Init(void)
 void StartDefaultTask(void const * argument)
 {
   /* init code for FATFS */
-  MX_FATFS_Init();
+
 
   /* USER CODE BEGIN 5 */
 
@@ -406,7 +407,7 @@ void StartDefaultTask(void const * argument)
 
   while(f_gets(buffer, sizeof(buffer), &fil))
   {
-    //printf("%s", buffer);
+    printf("%s", buffer);
   }
 
   /* Close file */
