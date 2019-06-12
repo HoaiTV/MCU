@@ -9,7 +9,7 @@ Simple SD Audio Player with an 8-pin IC
 http://elm-chan.org/works/sd8p/report.html
 ****************************************************/
 
-#include "stm32f1xx_hal.h"
+#include "stm32f0xx_hal.h"
 #include <stdio.h>
 #include "wave_file.h"
 #include "ff.h"

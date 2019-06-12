@@ -1,7 +1,7 @@
 #ifndef _PWM_AUDIO
 #define _PWM_AUDIO
 
-#include "ministm32_pwm.h"
+#include <ministm32_pwm.h>
 #include <stdbool.h>
 #define TRUE	1
 #define FALSE	0
